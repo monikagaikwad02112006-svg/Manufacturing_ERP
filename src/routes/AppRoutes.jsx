@@ -2,6 +2,17 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import Dashboard from "../Pages/Dashboard";
 
+import GoodsReceipts from "../Sidebar/Purchase/Goods Receipts";
+
+import SupplierPayments from "../Sidebar/Purchase/Supplier Payments";
+
+import QualityCheck from "../Sidebar/Quality/Quality Check";
+
+import RejectedQuarantine from "../Sidebar/Quality/Rejected Quarantine";
+
+
+
+
 
 import Products from "../Sidebar/Masters/Products";
 import Suppliers from "../Sidebar/Masters/Suppliers";
@@ -56,6 +67,21 @@ function AppRoutes() {
         path="/suppliers"
         element={<Suppliers />}
       />
+
+<Route path="/goods-receipts" element={<GoodsReceipts />} />
+
+<Route path="/supplier-payments" element={<SupplierPayments />} />
+
+<Route
+  path="/rejected-quarantine"
+  element={<RejectedQuarantine />}
+/>
+
+
+
+<Route path="/quality-check" element={<QualityCheck />} />
+
+
 
       <Route
         path="/customers"

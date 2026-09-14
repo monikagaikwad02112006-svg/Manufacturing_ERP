@@ -222,9 +222,9 @@ function Dashboard() {
               View Production
             </Link>
 
-            <Link to="/stock-overview" className="welcome-secondary-btn">
-              Check Inventory
-            </Link>
+            <Link to="/inventory" className="welcome-secondary-btn">
+  Check Inventory
+</Link>
           </div>
         </div>
 
