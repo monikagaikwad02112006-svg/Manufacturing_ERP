@@ -1,0 +1,91 @@
+/* =========================
+   SIDEBAR - LIGHT THEME
+========================= */
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+
+  background: #ffffff;
+  color: #374151;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  overflow-y: auto;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar-logo {
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-logo h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.sidebar-menu {
+  padding: 15px 10px;
+}
+
+.sidebar-menu a {
+  display: block;
+
+  padding: 10px 15px;
+  margin-bottom: 4px;
+
+  border-radius: 6px;
+
+  color: #4b5563;
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.sidebar-menu a:hover {
+  background: #f3f6fb;
+  color: #2563eb;
+}
+
+.sidebar-menu a.active {
+  background: #eaf2ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+
+/* =========================
+   SIDEBAR SECTIONS
+========================= */
+
+.menu-section {
+  margin-top: 18px;
+}
+
+.menu-title {
+  padding: 8px 15px;
+  margin-bottom: 5px;
+
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-section a {
+  padding-left: 25px;
+  font-size: 13px;
+}

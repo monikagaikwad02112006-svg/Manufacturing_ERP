@@ -1,0 +1,460 @@
+
+/* =========================================================
+   PAGE HEADER
+   Professional Manufacturing ERP UI
+   Light Theme / Responsive
+   ========================================================= */
+
+.page-header {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+/* =========================
+   LEFT SECTION
+   ========================= */
+
+.page-header-left {
+  min-width: 0;
+  flex: 1;
+}
+
+.page-header-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+  margin-bottom: 8px;
+
+  color: #8b95a7;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb-item {
+  color: #929baa;
+}
+
+.breadcrumb-current {
+  color: #5f6b7e;
+  font-weight: 700;
+}
+
+.breadcrumb-separator {
+  color: #c5cbd4;
+  font-weight: 500;
+}
+
+/* =========================
+   TITLE
+   ========================= */
+
+.page-header-title {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 750;
+
+  letter-spacing: -0.6px;
+}
+
+.page-header-subtitle {
+  max-width: 760px;
+
+  margin: 7px 0 0;
+
+  color: #748096;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   ACTIONS
+   ========================= */
+
+.page-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+}
+
+.page-header-actions button,
+.page-header-actions a {
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 14px;
+
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* =========================
+   COMMON BUTTON STYLING
+   ========================= */
+
+.page-header-actions .primary-btn {
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.page-header-actions .primary-btn:hover {
+  border-color: #1d4ed8;
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+.page-header-actions .secondary-btn {
+  border: 1px solid #d9e0e9;
+
+  background: #ffffff;
+  color: #465268;
+}
+
+.page-header-actions .secondary-btn:hover {
+  border-color: #b9c5d6;
+  background: #f8fafc;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .page-header-actions {
+    width: 100%;
+
+    justify-content: flex-start;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+  .page-header {
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+
+  .page-header-title {
+    font-size: 25px;
+  }
+
+  .page-header-subtitle {
+    font-size: 12px;
+  }
+
+  .page-header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .page-header-actions button,
+  .page-header-actions a {
+    flex: 1;
+    min-width: 130px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 400px) {
+  .page-header-title {
+    font-size: 23px;
+  }
+
+  .page-header-breadcrumb {
+    font-size: 10px;
+  }
+
+  .page-header-subtitle {
+    font-size: 11px;
+  }
+
+  .page-header-actions {
+    flex-direction: column;
+  }
+
+  .page-header-actions button,
+  .page-header-actions a {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   Professional Manufacturing ERP UI
+   Light Theme / Responsive
+   ========================================================= */
+
+.page-header {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+/* =========================
+   LEFT SECTION
+   ========================= */
+
+.page-header-left {
+  min-width: 0;
+  flex: 1;
+}
+
+.page-header-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+  margin-bottom: 8px;
+
+  color: #8b95a7;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb-item {
+  color: #929baa;
+}
+
+.breadcrumb-current {
+  color: #5f6b7e;
+  font-weight: 700;
+}
+
+.breadcrumb-separator {
+  color: #c5cbd4;
+  font-weight: 500;
+}
+
+/* =========================
+   TITLE
+   ========================= */
+
+.page-header-title {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 750;
+
+  letter-spacing: -0.6px;
+}
+
+.page-header-subtitle {
+  max-width: 760px;
+
+  margin: 7px 0 0;
+
+  color: #748096;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   ACTIONS
+   ========================= */
+
+.page-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  flex-shrink: 0;
+}
+
+.page-header-actions button,
+.page-header-actions a {
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 14px;
+
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* =========================
+   COMMON BUTTON STYLING
+   ========================= */
+
+.page-header-actions .primary-btn {
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.page-header-actions .primary-btn:hover {
+  border-color: #1d4ed8;
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+.page-header-actions .secondary-btn {
+  border: 1px solid #d9e0e9;
+
+  background: #ffffff;
+  color: #465268;
+}
+
+.page-header-actions .secondary-btn:hover {
+  border-color: #b9c5d6;
+  background: #f8fafc;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .page-header-actions {
+    width: 100%;
+
+    justify-content: flex-start;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+  .page-header {
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+
+  .page-header-title {
+    font-size: 25px;
+  }
+
+  .page-header-subtitle {
+    font-size: 12px;
+  }
+
+  .page-header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .page-header-actions button,
+  .page-header-actions a {
+    flex: 1;
+    min-width: 130px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 400px) {
+  .page-header-title {
+    font-size: 23px;
+  }
+
+  .page-header-breadcrumb {
+    font-size: 10px;
+  }
+
+  .page-header-subtitle {
+    font-size: 11px;
+  }
+
+  .page-header-actions {
+    flex-direction: column;
+  }
+
+  .page-header-actions button,
+  .page-header-actions a {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+

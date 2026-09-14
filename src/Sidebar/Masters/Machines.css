@@ -1,0 +1,663 @@
+/* =========================================================
+   MACHINES PAGE
+   Same professional theme as Warehouses
+   ========================================================= */
+
+.machines-page {
+  padding: 28px;
+  min-height: 100%;
+  background: #f5f7fa;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.machines-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.machines-header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #172033;
+}
+
+.machines-header p {
+  margin: 0;
+  color: #7b8494;
+  font-size: 14px;
+}
+
+/* Add Machine Button */
+
+.add-machine-btn {
+  border: none;
+  background: #123b5d;
+  color: #ffffff;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-machine-btn:hover {
+  background: #0d2f4b;
+}
+
+/* =========================================================
+   SUMMARY CARDS
+   ========================================================= */
+
+.machine-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.machine-card {
+  background: #ffffff;
+  border: 1px solid #e6eaf0;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 92px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.machine-card span {
+  font-size: 13px;
+  color: #7b8494;
+  margin-bottom: 8px;
+}
+
+.machine-card strong {
+  font-size: 26px;
+  font-weight: 700;
+  color: #172033;
+}
+
+/* =========================================================
+   FILTERS
+   ========================================================= */
+
+.machine-filters {
+  background: #ffffff;
+  border: 1px solid #e5e9ef;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 18px;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.machine-filters input,
+.machine-filters select {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #dce2e9;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #3f4858;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.machine-filters input::placeholder {
+  color: #9aa3b1;
+}
+
+.machine-filters input:focus,
+.machine-filters select:focus {
+  border-color: #5b8aaa;
+  box-shadow: 0 0 0 3px rgba(49, 108, 147, 0.08);
+}
+
+/* =========================================================
+   TABLE CONTAINER
+   ========================================================= */
+
+.machines-table-container {
+  background: #ffffff;
+  border: 1px solid #e5e9ef;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.machines-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+}
+
+.machines-table thead {
+  background: #fafbfc;
+}
+
+.machines-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: #727c8d;
+  border-bottom: 1px solid #e5e9ef;
+  white-space: nowrap;
+}
+
+.machines-table td {
+  padding: 15px 16px;
+  border-bottom: 1px solid #edf0f4;
+  color: #3f4858;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.machines-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.machines-table tbody tr:hover {
+  background: #fafcfe;
+}
+
+.machines-table td strong {
+  color: #123b5d;
+  font-weight: 700;
+}
+
+/* =========================================================
+   MACHINE TYPE
+   ========================================================= */
+
+.machines-table td:nth-child(3) {
+  font-weight: 600;
+  color: #526071;
+}
+
+/* =========================================================
+   DEPARTMENT
+   ========================================================= */
+
+.machines-table td:nth-child(4) {
+  color: #526071;
+}
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.machines-table td:nth-child(5) {
+  color: #667181;
+}
+
+/* =========================================================
+   OPERATOR
+   ========================================================= */
+
+.machines-table td:nth-child(6) {
+  color: #526071;
+}
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.machine-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 78px;
+  padding: 6px 10px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Active */
+
+.machine-status.active {
+  background: #e8f7ef;
+  color: #197447;
+}
+
+/* Maintenance */
+
+.machine-status.maintenance {
+  background: #fff5df;
+  color: #a46a00;
+}
+
+/* Inactive */
+
+.machine-status.inactive {
+  background: #f1f2f4;
+  color: #737b88;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.machine-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.machine-actions button {
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e0e5eb;
+  background: #ffffff;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.machine-actions button:hover {
+  background: #f5f7fa;
+  border-color: #cfd7e0;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.no-machine {
+  text-align: center !important;
+  padding: 45px 20px !important;
+  color: #8a93a1 !important;
+  font-size: 14px !important;
+}
+
+/* =========================================================
+   MODAL OVERLAY
+   ========================================================= */
+
+.machine-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(15, 23, 42, 0.48);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  z-index: 1000;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   ADD / EDIT MODAL
+   ========================================================= */
+
+.machine-modal {
+  width: min(850px, 100%);
+  max-height: 90vh;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================================================
+   MODAL HEADER
+   ========================================================= */
+
+.machine-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 22px;
+
+  border-bottom: 1px solid #e9edf2;
+}
+
+.machine-modal-header h2 {
+  margin: 0;
+  color: #172033;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.machine-modal-header button {
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  background: transparent;
+
+  color: #7b8494;
+  font-size: 26px;
+  line-height: 1;
+
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.machine-modal-header button:hover {
+  background: #f1f3f6;
+  color: #172033;
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.machine-modal form {
+  padding: 22px;
+}
+
+.machine-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+
+  color: #3f4858;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 42px;
+
+  padding: 0 12px;
+
+  border: 1px solid #dce2e9;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #3f4858;
+
+  font-size: 14px;
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #9aa3b1;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #5b8aaa;
+  box-shadow: 0 0 0 3px rgba(49, 108, 147, 0.08);
+}
+
+/* =========================================================
+   FORM BUTTONS
+   ========================================================= */
+
+.machine-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 24px;
+  padding-top: 18px;
+
+  border-top: 1px solid #edf0f4;
+}
+
+.cancel-btn,
+.save-machine-btn {
+  height: 40px;
+  padding: 0 17px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cancel-btn {
+  border: 1px solid #dce2e9;
+  background: #ffffff;
+  color: #596474;
+}
+
+.cancel-btn:hover {
+  background: #f5f7fa;
+}
+
+.save-machine-btn {
+  border: none;
+  background: #123b5d;
+  color: #ffffff;
+}
+
+.save-machine-btn:hover {
+  background: #0d2f4b;
+}
+
+/* =========================================================
+   VIEW MACHINE MODAL
+   ========================================================= */
+
+.machine-view-modal {
+  width: min(650px, 100%);
+  max-height: 90vh;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================================================
+   MACHINE DETAILS
+   ========================================================= */
+
+.machine-details {
+  padding: 22px;
+}
+
+.machine-details p {
+  margin: 0;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #edf0f4;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  color: #596474;
+}
+
+.machine-details p:last-child {
+  border-bottom: none;
+}
+
+.machine-details strong {
+  width: 170px;
+  flex-shrink: 0;
+
+  color: #3f4858;
+  font-weight: 600;
+}
+
+/* =========================================================
+   RESPONSIVE - 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .machine-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .machine-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .machines-page {
+    padding: 20px;
+  }
+
+  .machines-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .machines-header h1 {
+    font-size: 24px;
+  }
+
+  .add-machine-btn {
+    white-space: nowrap;
+  }
+
+  .machine-summary {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .machine-card {
+    padding: 16px;
+  }
+
+  .machine-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .machine-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .machine-modal {
+    max-height: 94vh;
+  }
+
+  .machine-view-modal {
+    max-height: 94vh;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - 450px
+   ========================================================= */
+
+@media (max-width: 450px) {
+  .machines-page {
+    padding: 15px;
+  }
+
+  .machines-header {
+    flex-direction: column;
+  }
+
+  .add-machine-btn {
+    width: 100%;
+  }
+
+  .machine-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .machine-card {
+    min-height: 75px;
+  }
+
+  .machine-card strong {
+    font-size: 22px;
+  }
+
+  .machine-modal-overlay {
+    padding: 10px;
+  }
+
+  .machine-modal form {
+    padding: 16px;
+  }
+
+  .machine-modal-header {
+    padding: 16px;
+  }
+
+  .machine-details {
+    padding: 16px;
+  }
+
+  .machine-details p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .machine-details strong {
+    width: auto;
+  }
+
+  .machine-form-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-btn,
+  .save-machine-btn {
+    width: 100%;
+  }
+}
