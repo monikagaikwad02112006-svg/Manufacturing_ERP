@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import "./Supplier Payments.css";
+import "./Supplier payments.css";
 
 const initialPayments = [
   {

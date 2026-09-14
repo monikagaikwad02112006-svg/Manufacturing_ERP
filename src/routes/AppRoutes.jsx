@@ -4,7 +4,9 @@ import Dashboard from "../Pages/Dashboard";
 
 import GoodsReceipts from "../Sidebar/Purchase/Goods Receipts";
 
-import SupplierPayments from "../Sidebar/Purchase/Supplier Payments";
+
+import SupplierPayments from "../Sidebar/Purchase/Supplier payments";
+
 
 import QualityCheck from "../Sidebar/Quality/Quality Check";
 
@@ -70,7 +72,10 @@ function AppRoutes() {
 
 <Route path="/goods-receipts" element={<GoodsReceipts />} />
 
-<Route path="/supplier-payments" element={<SupplierPayments />} />
+<Route
+  path="/supplier-payments"
+  element={<SupplierPayments />}
+/>
 
 <Route
   path="/rejected-quarantine"
